@@ -6,6 +6,8 @@ IMAGE_INSTALL = "\
     packagegroup-core-boot \
     packagegroup-core-full-cmdline \
     ${CORE_IMAGE_EXTRA_INSTALL} \
+    libgpiod \
+    libgpiod-tools \
     htop \
     btop \
     "
@@ -19,5 +21,6 @@ IMAGE_INSTALL:append:genesys-5ev = " vim"
 IMAGE_FSTYPES:append = " wic"
 
 WKS_FILE = "base.wks.in"
+# WKS_FILE = "xilinx-default-sd.wks"
 
 inherit core-image
