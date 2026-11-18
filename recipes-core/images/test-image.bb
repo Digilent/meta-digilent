@@ -9,6 +9,7 @@ IMAGE_INSTALL = "\
     libgpiod \
     libgpiod-tools \
     htop \
+    test-suite \
     btop \
     "
 
